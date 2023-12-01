@@ -26,11 +26,10 @@ body {
     background: #E6F0FF;
     width: 100%;
     display: flex;
-    position: fixed;
-    top: 0;
+    position: sticky;
+    top: -26px;
     z-index: 100;
     padding-top: 26px;
-    justify-content: center;
 }
 
 .header-hero {
@@ -84,6 +83,10 @@ body {
 .header-menu-item a {
     text-decoration: none;
     color: #4F5361;
+}
+
+.header-menu-item a:hover {
+    text-decoration: underline;
 }
 
 .header-menu-right {
@@ -174,9 +177,9 @@ body {
     display: inline-block;
     width: 100%;
     padding-top: 43px;
-    padding-bottom: 41px;
+    padding-bottom: 79px;
     margin-top: 79px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
 
 .rating {
@@ -215,18 +218,24 @@ body {
     padding-top: 70px;
 }
 
-.clients-logo-item img:nth-of-type(2), .clients-logo-item img:last-of-type {
-    padding-right: 0;
+.clients-logo-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 90px;
+    padding: 0 42px;
+    border-radius: 12px;
 }
 
+.clients-logo-item a:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 /* Work */
 .work {
     min-width: 900px;
     width: 100%;
     padding-top: 79px;
-    padding-bottom: 79px;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .work-content {
@@ -771,6 +780,10 @@ body {
     display: flex;
     color: #646464;
     background-color: #f9f9f9;
+}
+
+.footer-brand i:hover {
+    background-color: #ebebeb;
 }
 
 .footer-logo {
